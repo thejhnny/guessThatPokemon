@@ -1,0 +1,11 @@
+<div style="text-align: center">
+
+    <h1 style="text-align: center">Points: {{points}}</h1>
+  <h4>Guess that Pokemon!</h4>
+  <div ng-transclude></div>
+  <img ng-src="{{pokemons[random].imageUrl}}"/>
+  <h2 ng-show="correct">CORRECT!</h2>
+  <h2 ng-show="incorrect">WRONG! Try again.</h2>
+  <input type="text" placeholder="guess" ng-model="guess"/>
+  <button ng-click="guessPokemon()">Guess</button>
+</div>
