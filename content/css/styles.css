@@ -36,7 +36,8 @@ h1,h2,h3{
 }
 
 #menu-bar li{
-  float: right;
+  /* float: right; */
+  display:inline-block;
   margin-left: 20px;
 }
 
@@ -76,9 +77,9 @@ main{
   margin: 10px 0;
 }
 
-.content button:nth-child(2){
+/* .content button:nth-child(2){
   float: right;
-}
+} */
 
 .content ul{
   padding: 0;
@@ -166,10 +167,10 @@ main.ng-enter.ng-enter-active {
   transform: translateX(-100%);
 }
 
-#pokemon-list li.ng-leave-stagger{
+/* #pokemon-list li.ng-leave-stagger{
   transition-delay: 0.2s;
   transition-duration: 0;
-}
+} */
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
   border: 2px solid red;
